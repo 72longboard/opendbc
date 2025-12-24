@@ -385,6 +385,14 @@ class CAR(Platforms):
     KIA_K5_2021.specs,
     flags=HyundaiFlags.MANDO_RADAR | HyundaiFlags.CHECKSUM_CRC8 | HyundaiFlags.HYBRID,
   )
+  
+  KIA_K5_HEV_2019 = HyundaiPlatformConfig(
+    [HyundaiCarDocs("Kia K5 Hybrid 2019", car_parts=CarParts.common([CarHarness.hyundai_h]))],
+    KIA_K5_2019.specs,
+    CarSpecs(mass=1595 *, wheelbase=2.8, steerRatio=13.27)
+    HyundaiFlags.HYBRID,
+  )
+  
   KIA_K8_HEV_1ST_GEN = HyundaiCanFDPlatformConfig(
     [HyundaiCarDocs("Kia K8 Hybrid (with HDA II) 2023", "Highway Driving Assist II", car_parts=CarParts.common([CarHarness.hyundai_q]))],
     # mass: https://carprices.ae/brands/kia/2023/k8/1.6-turbo-hybrid, steerRatio: guesstimate from K5 platform
