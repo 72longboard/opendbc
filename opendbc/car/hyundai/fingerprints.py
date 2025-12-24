@@ -10,14 +10,6 @@ Ecu = CarParams.Ecu
 
 FW_VERSIONS = {
 
-  CAR.KIA_K5_HEV_2019: {
-    (Ecu.fwdRadar, 0x7d0, None): [
-      b'\xf1\x00JFhe SCC FHCUP      1.00 1.03 99110-A8500         ',
-    ],
-    (Ecu.fwdCamera, 0x7c4, None): [
-      b'\xf1\x00JFH MFC  AT KOR LHD 1.00 1.04 95895-A8200 181217',
-    ],   
-  },
   CAR.HYUNDAI_AZERA_6TH_GEN: {
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00IG__ SCC F-CU-      1.00 1.00 99110-G8100         ',
