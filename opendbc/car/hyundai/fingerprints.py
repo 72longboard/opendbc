@@ -643,6 +643,14 @@ FW_VERSIONS = {
       b'\xf1\x00DL3HMFC  AT KOR LHD 1.00 1.04 99210-L2000 210527',
     ],
   },
+
+   CAR.KIA_K5_HEV_2019: {
+    (Ecu.fwdRadar, 0x7E3, None): [
+      b'fwVersion',
+      b'existingFirmware',
+    ],
+  },
+  
   CAR.HYUNDAI_KONA_EV: {
     (Ecu.abs, 0x7d1, None): [
       b'\xf1\x00OS IEB \x01 212 \x11\x13 58520-K4000',
