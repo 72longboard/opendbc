@@ -13,6 +13,9 @@ FW_VERSIONS = {
   CAR.KIA_K5_HEV_2019: {
       (Ecu.fwdRadar, 0x7D0, None): [
       b'\xf1\x00JFhe SCC FHCUP      1.00 1.03 99110-A8500         ',
+      b'\xf1\x8b \x19\x07\x08',
+      b'\xf1\x10\x1fO\x00\x00',
+  
   ],
   (Ecu.fwdCamera, 0x7C4, None): [
       b'\xf1\x00JFH MFC  AT KOR LHD 1.00 1.04 95895-A8200 181217',
