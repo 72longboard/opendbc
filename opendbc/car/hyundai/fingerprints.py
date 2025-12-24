@@ -9,6 +9,19 @@ Ecu = CarParams.Ecu
 
 
 FW_VERSIONS = {
+
+  CAR.KIA_K5_HEV_2019: {
+    (Ecu.fwdRadar, 0x7D0, None): [
+      b'\xf1\x00JFhe SCC FHCUP      1.00 1.03 99110-A8500         ',
+    ],
+    (Ecu.fwdCamera, 0x7C4, None): [
+      b'\xf1\x00JFH MFC  AT KOR LHD 1.00 1.04 95895-A8200 181217',
+    ],
+    (Ecu.cornerRadar, 0x7B7, None): [
+      b'\xf1\x00\xff\x00',
+    ],
+   
+  },
   CAR.HYUNDAI_AZERA_6TH_GEN: {
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00IG__ SCC F-CU-      1.00 1.00 99110-G8100         ',
@@ -643,14 +656,6 @@ FW_VERSIONS = {
       b'\xf1\x00DL3HMFC  AT KOR LHD 1.00 1.04 99210-L2000 210527',
     ],
   },
-
-   CAR.KIA_K5_HEV_2019: {
-    (Ecu.fwdRadar, 0x7E3, None): [
-      b'fwVersion',
-      b'existingFirmware',
-    ],
-  },
-  
   CAR.HYUNDAI_KONA_EV: {
     (Ecu.abs, 0x7d1, None): [
       b'\xf1\x00OS IEB \x01 212 \x11\x13 58520-K4000',
